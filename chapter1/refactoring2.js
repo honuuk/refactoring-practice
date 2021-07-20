@@ -32,7 +32,7 @@ function statement(invoice, plays) {
 
     function totalAmount() {
       let result = 0;
-      for (let perf of invoice.performances) {
+      for (let perf of data.performances) {
         result += amountFor(perf);
       }
       return result;
@@ -40,7 +40,7 @@ function statement(invoice, plays) {
 
     function totalVolumnCredits() {
       let result = 0;
-      for (let perf of invoice.performances) {
+      for (let perf of data.performances) {
         result += volumeCreditsFor(perf);
       }
       return result;
