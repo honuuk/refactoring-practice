@@ -17,6 +17,7 @@ function statement(invoice, plays) {
 
   function enrichPerformance(aPerformance) {
     const result = Object.assign({}, aPerformance);
+    result.play = playFor(result);
     return result;
   }
 
@@ -29,7 +30,7 @@ function statement(invoice, plays) {
 
     for (let perf of data.performances) {
       // 청구내역 출력
-      result += `  ${playFor(perf).name}: ${usd(amountFor(perf))} (${
+      result += `  ${perf.play.name}: ${usd(amountFor(perf))} (${
         perf.audience
       }석)\n`;
     }
@@ -78,7 +79,7 @@ function statement(invoice, plays) {
     function amountFor(aPerformance) {
       let result = 0;
 
-      switch (playFor(aPerformance).type) {
+      switch (aPerformance.play.type) {
         case "tragedy": // 비극
           result = 40000;
           if (aPerformance.audience > 30) {
