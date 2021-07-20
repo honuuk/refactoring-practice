@@ -1,3 +1,7 @@
+function createPerformanceCalculator(aPerformance, aPlay) {
+  return new PerformanceCalculator(aPerformance, aPlay);
+}
+
 class PerformanceCalculator {
   constructor(aPerformance, aPlay) {
     this.performance = aPerformance;
@@ -52,7 +56,7 @@ export default function createStatementData(invoice, plays) {
   return result;
 
   function enrichPerformance(aPerformance) {
-    const calculator = new PerformanceCalculator(
+    const calculator = createPerformanceCalculator(
       aPerformance,
       playFor(aPerformance)
     );
