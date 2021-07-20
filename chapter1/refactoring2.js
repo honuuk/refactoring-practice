@@ -20,6 +20,10 @@ function statement(invoice, plays) {
     return result;
   }
 
+  function playFor(aPerformance) {
+    return plays[aPerformance.playID];
+  }
+
   function renderPlainText(data, plays) {
     let result = `청구 내역 (고객명: ${data.customer})\n`;
 
@@ -69,10 +73,6 @@ function statement(invoice, plays) {
         currency: "USD",
         minimumFractionDigits: 2,
       }).format(aNumber / 100);
-    }
-
-    function playFor(aPerformance) {
-      return plays[aPerformance.playID];
     }
 
     function amountFor(aPerformance) {
