@@ -23,7 +23,7 @@ function usd(aNumber) {
 }
 
 function statement(invoice, plays) {
-  return renderHtml(createStatementData(invoice, plays));
+  return renderPlainText(createStatementData(invoice, plays));
 }
 
 function renderPlainText(data) {
@@ -38,6 +38,10 @@ function renderPlainText(data) {
   result += `총액: ${usd(data.totalAmount)}\n`;
   result += `적립 포인트: ${data.totalVolumeCredits}점\n`;
   return result;
+}
+
+function htmlStatement(invoice, plays) {
+  return renderHtml(createStatementData(invoice, plays));
 }
 
 function renderHtml(data) {
@@ -62,3 +66,4 @@ const plays = JSON.parse(
 );
 
 console.log(statement(invoice, plays));
+console.log(htmlStatement(invoice, plays));
