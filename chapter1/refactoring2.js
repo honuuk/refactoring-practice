@@ -88,7 +88,7 @@ function statement(invoice, plays) {
       // 포인트 적립
       result += Math.max(aPerformance.audience - 30, 0);
       // 희극 관객 5명마다 추가 포인트 제공
-      if ("comedy" === playFor(aPerformance).type)
+      if ("comedy" === aPerformance.play.type)
         result += Math.floor(aPerformance.audience / 5);
 
       return result;
