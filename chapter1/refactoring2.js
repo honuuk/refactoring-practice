@@ -5,6 +5,8 @@
  *
  * 이 문제를 해결하기 위해 statement 함수를 데이터를 만드는 부분과 결과를 출력하는 부분으로 나눈다.
  * 분리한 renderPlainText 함수에 데이터 객체를 전달하도록 변경한다.
+ *
+ * 반복문을 파이프라인으로 변경하고 데이터 객체를 생성하는 부분을 함수로 분리한다.
  */
 
 const fs = require("fs");
@@ -26,19 +28,11 @@ function statement(invoice, plays) {
   }
 
   function totalVolumeCredits(data) {
-    let result = 0;
-    for (let perf of data.performances) {
-      result += perf.volumeCredit;
-    }
-    return result;
+    return data.performances.reduce((total, p) => total + p.volumeCredit, 0);
   }
 
   function totalAmount(data) {
-    let result = 0;
-    for (let perf of data.performances) {
-      result += perf.amount;
-    }
-    return result;
+    return data.performances.reduce((total, p) => total + p.amount, 0);
   }
 
   function playFor(aPerformance) {
