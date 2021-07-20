@@ -56,7 +56,7 @@ function statement(invoice, plays) {
 
     for (let perf of data.performances) {
       // 청구내역 출력
-      result += `  ${perf.play.name}: ${usd(amountFor(perf))} (${
+      result += `  ${perf.play.name}: ${usd(perf.amount)} (${
         perf.audience
       }석)\n`;
     }
@@ -69,7 +69,7 @@ function statement(invoice, plays) {
     function totalAmount() {
       let result = 0;
       for (let perf of data.performances) {
-        result += amountFor(perf);
+        result += perf.amount;
       }
       return result;
     }
