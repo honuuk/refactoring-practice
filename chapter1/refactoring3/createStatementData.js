@@ -17,7 +17,7 @@ class PerformanceCalculator {
     throw new Error("서브클래스에서 처리하도록 설계되었습니다.");
   }
 
-  get volumeCredit() {
+  get volumeCredits() {
     let result = 0;
 
     // 포인트 적립
@@ -78,12 +78,12 @@ export default function createStatementData(invoice, plays) {
     const result = Object.assign({}, aPerformance);
     result.play = calculator.play;
     result.amount = calculator.amount;
-    result.volumeCredit = calculator.volumeCredit;
+    result.volumeCredits = calculator.volumeCredits;
     return result;
   }
 
   function totalVolumeCredits(data) {
-    return data.performances.reduce((total, p) => total + p.volumeCredit, 0);
+    return data.performances.reduce((total, p) => total + p.volumeCredits, 0);
   }
 
   function totalAmount(data) {
