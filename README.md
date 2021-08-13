@@ -7,3 +7,6 @@
 ## 이 repository는 Refactoring 2판에 등장한 내용을 코드로 연습해보기 위한 repository 입니다.
 
 - **[Chapter1](https://github.com/jewook3617/refactoring-practice/tree/master/chapter1)** : 예시를 통한 리팩터링 맛보기
+- **Chapter2** : 리팩터링 원칙
+- **Chapter3** : 코드에서 나는 악취
+- **[Chapter4](https://github.com/jewook3617/refactoring-practice/tree/master/chapter4)** : 테스트 구축하기
