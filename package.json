@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/jewook3617/refactoring-practice/issues"
   },
-  "homepage": "https://github.com/jewook3617/refactoring-practice#readme"
+  "homepage": "https://github.com/jewook3617/refactoring-practice#readme",
+  "dependencies": {
+    "mocha": "^9.0.3"
+  }
 }
