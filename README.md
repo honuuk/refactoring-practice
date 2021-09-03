@@ -10,3 +10,4 @@
 - **Chapter2** : 리팩터링 원칙
 - **Chapter3** : 코드에서 나는 악취
 - **[Chapter4](https://github.com/jewook3617/refactoring-practice/tree/master/chapter4)** : 테스트 구축하기
+- **[Chapter6](https://github.com/jewook3617/refactoring-practice/tree/master/chapter6)** : 기본적인 리팩터링
