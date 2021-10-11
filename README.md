@@ -13,3 +13,4 @@
 - **Chapter5** : 리팩터링 카탈로그 보는 법
 - **[Chapter6](https://github.com/jewook3617/refactoring-practice/tree/master/chapter6)** : 기본적인 리팩터링
 - **[Chapter7](https://github.com/jewook3617/refactoring-practice/tree/master/chapter7)** : 캡슐화
+- **[Chapter8](https://github.com/jewook3617/refactoring-practice/tree/master/chapter8)** : 기능 이동
