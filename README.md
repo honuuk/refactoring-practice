@@ -14,3 +14,4 @@
 - **[Chapter6](https://github.com/jewook3617/refactoring-practice/tree/master/chapter6)** : 기본적인 리팩터링
 - **[Chapter7](https://github.com/jewook3617/refactoring-practice/tree/master/chapter7)** : 캡슐화
 - **[Chapter8](https://github.com/jewook3617/refactoring-practice/tree/master/chapter8)** : 기능 이동
+- **[Chapter9](https://github.com/jewook3617/refactoring-practice/tree/master/chapter9)** : 데이터 조직화
